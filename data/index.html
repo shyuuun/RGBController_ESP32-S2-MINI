@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kokutaro RGB Controller</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    rgb(1,1,1)
+                </li>
+                <li>
+                    <h1>RGB Controller</h1>
+                </li>
+                <li>
+                    <button id="randomBtn">Randomize</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="color-section">
+        <div class="color-left">
+            <div class="box-color">
+                <p class="box-color-text">
+                    rgb(
+                    <span id="box-color-text-red">1</span>
+                    <span>,</span>
+                    <span id="box-color-text-green">1</span>
+                    <span>,</span>
+                    <span id="box-color-text-blue">1</span>
+                    )
+                </p>
+            </div>
+        </div>
+        <div class="color-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo est voluptatem modi possimus aut. Explicabo voluptates at adipisci voluptas facilis. Unde veniam similique itaque laborum ea, quis odit quas ab!</p>
+            <input type="range" min="0" max="255" value="125" class="slider" id="redSlider">
+            <input type="range" min="0" max="255" value="125" class="slider" id="greenSlider">  
+            <input type="range" min="0" max="255" value="125" class="slider" id="blueSlider"> 
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
